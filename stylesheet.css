@@ -1,13 +1,13 @@
 *{
       margin: 0px;
       font-family: "Amazon Ember", arieal, sans-serif;
+      box-sizing: border-box;
 }
 
-.header{
+.navbar{
       background-color: #0f1111;
       height: 60px;
       width: 100%;
-      position: fixed;
       display: flex;
       align-items: center;
       color: white;
@@ -15,12 +15,20 @@
 
 }
 
+.border{
+    border: 1px solid transparent;
+}
+
+.border:hover{
+    border: 1px solid white;
+}
+
 .logo{
       background-image: url('/images/logo.png');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      height: 60px;
+      height: 50px;
       width: 100px;
 }
 
@@ -35,25 +43,26 @@
 
 .loc{
       width: 90px;
+      height: 50px;
+      margin: 3px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0px;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
 }
 
-.loc1{
+#loc1{
       margin-left: 15px;
       color: gray;
       margin-right: 10px;
       font-size: small;
 }
-.loc2{
+#loc2{
       display: flex;
 }
-.loc2:hover{
-      color: #FEBD68;
-      cursor: pointer;
-}
-#loc:hover{
-      color: #FEBD68;
-      cursor: pointer;
-}
+
 #select,
 #search,
 #search-btn {
@@ -91,60 +100,91 @@
     font-size: 2rem;
 }
 .nav-search {
-      display: flex;
-      height: 40px;
-      width: 900px;
-      align-items: center;
-      justify-content: space-evenly;
-  }
+    display: flex;
+    height: 40px;
+    width: 900px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-shrink: 1.5;
+}
 
-  .lang{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      margin-top: 10px;
-  }
+.lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 50px;
+}
 
-  #lang1{
-      margin-left: 5px;
-      color: gray;
-  }
+#lang1{
+    margin-left: 5px;
+    color: gray;
+}
 
-  .sign-in{
-      align-items: center;
-      height: 50px;
-      width: 150px;
-      align-content: center;
-  }
+.sign-in{
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    align-content: center;
+}
 
-  .sign-in-line1{
-      margin-left: 8px;
-      font-size: small;
-  }
+#sign-in-line1{
+    margin-left: 8px;
+    font-size: small;
+}
 
-  .sign-in-line2{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 150px;
-      color: white;
-  }
+#sign-in-line2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    color: white;
+}
 
-  #return{
-      width: 80px;
-  }
+.return{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
 
-  #return-line1{
-      font-size: small;
-  }
+#return-line1{
+    font-size: small;
+}
 
-  #cart{
-      width: 90px;
-      display: flex;
-  }
+.cart{
+    width: 55px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
 
-  .logo .nav-search .lang .sign-in #return #cart:on-hover{
+.nav-panel{
+    height: 39px;
+    width: 100%;
+    background-color: #222F3D;
+    display: flex;
+    color: white;
+    align-items: flex-start;    
+}
 
-      border: white solid 1px;
-  }
+.nav-panel div{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 10px; 
+}
+
+.nav-panel-1{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-panel-1 i{
+    margin-right: 4px;
+}

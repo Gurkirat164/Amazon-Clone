@@ -7,64 +7,78 @@
       <link rel="stylesheet" href="stylesheet.css">
       <title>Amazon Clone</title>
 </head>
-<header>
-      <div class="header">
-            <div class="logo"></div>
+<body>
+      <header>
+            <nav class="navbar">
+                  <div class="logo border"></div>
 
-            <div class="loc">
-                  <div class="loc1">
-                        <p>Deliver to</p>
+                  <div class="loc border">
+                        <div id="loc1">
+                              <p>Deliver to</p>
+                        </div>
+                        <div id="loc2">
+                              <i id="loc" class="fa-solid fa-location-dot"></i>
+                              <p><b>India</b></p>
+                        </div>
                   </div>
-                  <div class="loc2">
-                        <i id="loc" class="fa-solid fa-location-dot"></i>
-                        <p><b>India</b></p>
-                  </div>
-            </div>
-           <!-- <div class="search">
+                  <div class="nav-search">
+
                         <select name="select" id="select">
-                              <option value="all">All</option>
+                        <option value="all">All</option>
                         </select>
-                        <input class="search-box" type="text" name="q" placeholder="Search Amazon" aria-label="Search" />
-                        <button type="submit" class="search-icon">
+                        <input type="text" name="Search" id="search" placeholder="Search Amazon">
+                        <button type="button" id="search-btn">
                               <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
-            </div>
-      -->
-            <div class="nav-search">
-
-                  <select name="select" id="select">
-                      <option value="all">All</option>
-                  </select>
-                  <input type="text" name="Search" id="search" placeholder="Search Amazon">
-                  <button type="button" id="search-btn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-              </div>
-            <div class="lang">
-                  <p><b>EN</b></p>
-                  <i class="fa-solid fa-caret-down" id="lang1"></i>
-            </div>
-            <div class="sign-in">
-                  <div class="sign-in-line1">
-                        <p>Hello, sign in</p>
                   </div>
-                  <div class="sign-in-line2">
-                        <p><b>Account & Lists</b></p>
+                  <div class="lang border">
+                        <p><b>EN</b></p>
                         <i class="fa-solid fa-caret-down" id="lang1"></i>
                   </div>
-            </div>
-            <div id="return">
-                  <div id="return-line1">
-                        <p>Returns</p>
+                  <div class="sign-in border">
+                        <div id="sign-in-line1">
+                              <p>Hello, sign in</p>
+                        </div>
+                        <div id="sign-in-line2">
+                              <p><b>Account & Lists</b></p>
+                              <i class="fa-solid fa-caret-down" id="lang1"></i>
+                        </div>
                   </div>
-                  <div id="return-line2">
-                        <p><b>& Orders</b></p>
+                  <div class="return border">
+                        <div id="return-line1">
+                              <p>Returns</p>
+                        </div>
+                        <div id="return-line2">
+                              <p><b>& Orders</b></p>
+                        </div>
                   </div>
-            </div>
-            <div id="cart">
-                  <i class="fa-solid fa-cart-shopping" id="cart-logo"></i>
-                  <p><b>Cart</b></p>
-            </div>
-      </div>
-</header>
+                  <div class="cart border">
+                        <i class="fa-solid fa-cart-shopping" id="cart-logo"></i>
+                        <p><b>Cart</b></p>
+                  </div>
+            </nav>
+            <nav class="nav-panel">
+                  <div class="nav-panel-1 border">
+                        <i class="fa-solid fa-bars"></i>
+                        <p>All</p>
+                  </div>
+                  <div class="nav-panel-2 border">
+                        <p>Today's Deals</p>
+                  </div>
+                  <div class="nav-panel-5 border">
+                        <p>Registry</p>  
+                  </div>
+                  </div>
+                  <div class="nav-panel-3 border">
+                        <p>Customer Service</p>
+                  </div>
+                  <div class="nav-panel-4 border">
+                        <p>Gift Cards</p>
+                  </div>
+                  <div class="nav-panel-6 border">
+                        <p>Sell</p>
+                  </div>
+            </nav>
+      </header>
+</body>
 </html>
