@@ -140,6 +140,11 @@
   }
 
   #cart{
-      width: 100px;
+      width: 90px;
       display: flex;
+  }
+
+  .logo .nav-search .lang .sign-in #return #cart:on-hover{
+
+      border: white solid 1px;
   }
