@@ -224,18 +224,15 @@
 .content-items{
     position: absolute;
     top: 70px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px;
-    gap: 1px 1px;
-    grid-auto-flow: column;
-}
-
-.content-items-box{
+    height: 200px;
     background-color: white;
-    padding: 20px;
-
+    display: flex;
 }
 
-#content-items-title{
-    font-size: large;
+.items-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
